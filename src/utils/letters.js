@@ -21,8 +21,10 @@ export function getDistractorLetters(word, count = 4) {
 }
 
 export function getShuffledLettersForWord(word, distractorCount = 4) {
-  const wordLetters = word.split('');
-  const distractors = getDistractorLetters(word, distractorCount);
+  // Strip out spaces so we don't generate empty tiles for compound words
+  const cleanWord = word.replace(/\s+/g, '');
+  const wordLetters = cleanWord.split('');
+  const distractors = getDistractorLetters(cleanWord, distractorCount);
   
   // Assign an ID to each letter tile to make it unique for drag-and-drop
   const allTiles = [...wordLetters, ...distractors].map((char, index) => ({
