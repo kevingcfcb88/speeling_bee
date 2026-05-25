@@ -1,0 +1,22 @@
+[
+  { "id": "1", "english": "apple", "spanish": "manzana" },
+  { "id": "2", "english": "book", "spanish": "libro" },
+  { "id": "3", "english": "cat", "spanish": "gato" },
+  { "id": "4", "english": "dog", "spanish": "perro" },
+  { "id": "5", "english": "house", "spanish": "casa" },
+  { "id": "6", "english": "tree", "spanish": "árbol" },
+  { "id": "7", "english": "car", "spanish": "coche" },
+  { "id": "8", "english": "sun", "spanish": "sol" },
+  { "id": "9", "english": "moon", "spanish": "luna" },
+  { "id": "10", "english": "water", "spanish": "agua" },
+  { "id": "11", "english": "fire", "spanish": "fuego" },
+  { "id": "12", "english": "bird", "spanish": "pájaro" },
+  { "id": "13", "english": "fish", "spanish": "pez" },
+  { "id": "14", "english": "boy", "spanish": "niño" },
+  { "id": "15", "english": "girl", "spanish": "niña" },
+  { "id": "16", "english": "flower", "spanish": "flor" },
+  { "id": "17", "english": "school", "spanish": "escuela" },
+  { "id": "18", "english": "friend", "spanish": "amigo" },
+  { "id": "19", "english": "family", "spanish": "familia" },
+  { "id": "20", "english": "color", "spanish": "color" }
+]
