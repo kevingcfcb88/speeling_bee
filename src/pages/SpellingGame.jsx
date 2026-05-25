@@ -160,12 +160,14 @@ export default function SpellingGame({ words, onGameComplete }) {
     }
   };
 
-  // Auto-validate when length matches target length
+  // Auto-validate when length matches target length (ignoring spaces)
   useEffect(() => {
     const targetWord = phase === 'english' ? currentWord.english : currentWord.spanish;
     const currentAnswerArray = phase === 'english' ? englishAnswer : spanishAnswer;
     
-    if (currentAnswerArray.length === targetWord.length && phase !== 'transition') {
+    const targetLengthWithoutSpaces = targetWord.replace(/\s+/g, '').length;
+
+    if (currentAnswerArray.length === targetLengthWithoutSpaces && phase !== 'transition') {
       validateCurrentPhase();
     }
   }, [englishAnswer, spanishAnswer, phase, currentWord]);
